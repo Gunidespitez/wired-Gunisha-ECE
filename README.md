@@ -5,7 +5,7 @@ Bandit Level 0 -> 1
 * Logged in to the Bandit game using SSH with the command *"ssh bandit0@bandit.labs.overthewire.org"* and the password "bandit0".  
 * Used the **'ls'** command to list all files in the home directory and found the "readme" file.  
 * Used the **'cat'** command to read the file's contents and found the password with "cat readme".  
-***Password - ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If***
+* ***Password - ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If***
 
 Bandit Level 1 -> 2
 -------------------
@@ -19,26 +19,26 @@ Bandit Level 2 -> 3
 -------------------
 * Logged into level 3 of Bandit using SSH with the command *"ssh bandit2@bandit.labs.overthewire.org"* and the password obtained from the previous level.
 * Used the **'ls'** command to list files in the home directory and found the file "spaces in this file name".
-* Used the 'cat' command to read the file's contents and found the password with "cat cat spaces\ in\ this\ filename".
+* Used the **'cat'** command to read the file's contents and found the password with "cat cat spaces\ in\ this\ filename".
 ***Password - MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx***
 
 Bandit Level 3 -> 4
 -------------------
-Logged into level 4 of Bandit using SSH with the command "ssh bandit3@bandit.labs.overthewire.org" and the password obtained from the previous level.
-Used the 'ls' command to list the directory "inhere".
-Used the 'cd' command to enter the "inhere" directory.
-Used the 'ls -a' command to list all files in this directory and found the hidden file "...Hiding-From-You".
-Used the 'cat' command to read the file's contents and found the password with "cat ...Hiding-From-You".
-Password - 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+* Logged into level 4 of Bandit using SSH with the command "ssh bandit3@bandit.labs.overthewire.org" and the password obtained from the previous level.
+* Used the **'ls'** command to list the directory "inhere".
+* Used the **'cd'** command to enter the "inhere" directory.
+* Used the **'ls -a'** command to list all files in this directory and found the hidden file "...Hiding-From-You".
+* Used the **'cat'** command to read the file's contents and found the password with "cat ...Hiding-From-You".
+* ***Password - 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ***
 
 Bandit Level 4 -> 5
 -------------------
-Logged into level 5 of Bandit using SSH with the command "ssh bandit4@bandit.labs.overthewire.org" and the password obtained from the previous level.
-Used the 'ls' command to list files and directories and found the "inhere" directory.
-Used the "ls inhere" to list all files in the "inhere" directory.
-Used the 'file' command to list types of files in the directory with "file inhere/*".
+* Logged into level 5 of Bandit using SSH with the command "ssh bandit4@bandit.labs.overthewire.org" and the password obtained from the previous level.
+* Used the 'ls' command to list files and directories and found the "inhere" directory.
+* Used the "ls inhere" to list all files in the "inhere" directory.
+* Used the 'file' command to list types of files in the directory with "file inhere/*".
 
-Output - bandit4@bandit:~$ file inhere/*
+==Output - bandit4@bandit:~$ file inhere/*
 inhere/-file00: data
 inhere/-file01: data
 inhere/-file02: data
@@ -48,7 +48,7 @@ inhere/-file05: data
 inhere/-file06: data
 inhere/-file07: ASCII text
 inhere/-file08: data
-inhere/-file09: data
+inhere/-file09: data==
 
 We can see that -file07 is the only human readable file in the directory.
 Used "cat inhere/-file07" to read the file's contents and found the password.
