@@ -2,25 +2,25 @@
 Hi. Following is my bandit writeup:
 Bandit Level 0 -> 1
 -------------------
-* item-Logged in to the Bandit game using SSH with the command "ssh bandit0@bandit.labs.overthewire.org" and the password "bandit0".  
-* item-Used the 'ls' command to list all files in the home directory and found the "readme" file.  
-Used the 'cat' command to read the file's contents and found the password with "cat readme".  
+* Logged in to the Bandit game using SSH with the command *"ssh bandit0@bandit.labs.overthewire.org"* and the password "bandit0".  
+* Used the **'ls'** command to list all files in the home directory and found the "readme" file.  
+* Used the **'cat'** command to read the file's contents and found the password with "cat readme".  
 ***Password - ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If***
 
 Bandit Level 1 -> 2
 -------------------
-Logged into level 2 of Bandit using SSH with the command "ssh bandit1@bandit.labs.overthewire.org" and the password obtained from the previous level.
-Used the 'ls' command to list all files in the home directory and found the "-" file.
-Used the 'cat' command to read the file's contents and found the password with "cat < -".
-Alternatively, "cat ~/-" could also be used to read the file's contents. Here "~/" represents the home directory.
-Password - 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+* Logged into level 2 of Bandit using SSH with the command *"ssh bandit1@bandit.labs.overthewire.org"* and the password obtained from the previous level.
+* Used the **'ls'** command to list all files in the home directory and found the "-" file.
+* Used the **'cat'** command to read the file's contents and found the password with "cat < -".
+Alternatively, "cat /-" could also be used to read the file's contents. Here "~/" represents the home directory.
+***Password - 263JGJPfgU6LtdEvgfWU1XP5yac29mFx***
 
 Bandit Level 2 -> 3
 -------------------
-Logged into level 3 of Bandit using SSH with the command "ssh bandit2@bandit.labs.overthewire.org" and the password obtained from the previous level.
-Used the 'ls' command to list files in the home directory and found the file "spaces in this file name".
-Used the 'cat' command to read the file's contents and found the password with "cat cat spaces\ in\ this\ filename".
-Password - MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+* Logged into level 3 of Bandit using SSH with the command *"ssh bandit2@bandit.labs.overthewire.org"* and the password obtained from the previous level.
+* Used the **'ls'** command to list files in the home directory and found the file "spaces in this file name".
+* Used the 'cat' command to read the file's contents and found the password with "cat cat spaces\ in\ this\ filename".
+***Password - MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx***
 
 Bandit Level 3 -> 4
 -------------------
