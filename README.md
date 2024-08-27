@@ -34,11 +34,11 @@ Bandit Level 3 -> 4
 Bandit Level 4 -> 5
 -------------------
 * Logged into level 5 of Bandit using SSH with the command "ssh bandit4@bandit.labs.overthewire.org" and the password obtained from the previous level.
-* Used the 'ls' command to list files and directories and found the "inhere" directory.
-* Used the "ls inhere" to list all files in the "inhere" directory.
-* Used the 'file' command to list types of files in the directory with "file inhere/*".
+* Used the **'ls'** command to list files and directories and found the "inhere" directory.
+* Used the **"ls inhere"** to list all files in the "inhere" directory.
+* Used the **'file'** command to list types of files in the directory with "file inhere/*".
 
-==Output - bandit4@bandit:~$ file inhere/*
+[Output - bandit4@bandit:~$ file inhere/*
 inhere/-file00: data
 inhere/-file01: data
 inhere/-file02: data
@@ -48,57 +48,57 @@ inhere/-file05: data
 inhere/-file06: data
 inhere/-file07: ASCII text
 inhere/-file08: data
-inhere/-file09: data==
+inhere/-file09: data]
 
-We can see that -file07 is the only human readable file in the directory.
-Used "cat inhere/-file07" to read the file's contents and found the password.
-Password - 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+* We can see that -file07 is the only human readable file in the directory.
+* Used **"cat inhere/-file07"** to read the file's contents and found the password.
+* ***Password - 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw***
 
 Bandit Level 5 -> 6
 -------------------
-Logged into level 6 of Bandit using SSH with the command "ssh bandit5@bandit.labs.overthewire.org" and the password obtained from the previous level.
-Used the 'ls' command to list the directory "inhere".
-Used the find command to find files that are human-readable, 1033 bytes in size and not executable with "find inhere -type f -size 1033c ! -executable" which output the file "inhere/maybehere07/.file2".
-Used the 'cat' command to read the file's contents and found the password with "cat inhere/maybehere07/.file2".
-Password - HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
+* Logged into level 6 of Bandit using SSH with the command "ssh bandit5@bandit.labs.overthewire.org" and the password obtained from the previous level.
+* Used the **'ls'** command to list the directory "inhere".
+* Used the **find** command to find files that are human-readable, 1033 bytes in size and not executable with "find inhere -type f -size 1033c ! -executable" which output the file "inhere/maybehere07/.file2".
+* Used the **'cat'** command to read the file's contents and found the password with "cat inhere/maybehere07/.file2".
+* ***Password - HWasnPhtq9AVKe0dmk45nxy20cvUa6EG***
 
 Bandit Level 6 -> 7
 -------------------
-Logged into level 7 of Bandit using SSH with the command "ssh bandit6@bandit.labs.overthewire.org" and the password obtained from the previous level.
-Used the find command to find files somewhere on the server that is owned by user bandit7, owned by group bandit6 and is 33 bytes in size with "find / -type f -user bandit7 -group bandit6".
-Whilst it still gives the solution, it gives permission errors which can be fixed by adding an argument "2>/dev/null", i.e, "find / -type f -user bandit7 -group bandit6 2>/dev/null".
-Output - "/var/lib/dpkg/info/bandit7.password"
-Used the 'cat' command to read the file's contents and found the password with "cat /var/lib/dpkg/info/bandit7.password".
-Password - morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+* Logged into level 7 of Bandit using SSH with the command "ssh bandit6@bandit.labs.overthewire.org" and the password obtained from the previous level.
+* Used the find command to find files somewhere on the server that is owned by user bandit7, owned by group bandit6 and is 33 bytes in size with "find / -type f -user bandit7 -group bandit6".
+* Whilst it still gives the solution, it gives permission errors which can be fixed by adding an argument "2>/dev/null", i.e, "find / -type f -user bandit7 -group bandit6 2>/dev/null".
+* Output - "/var/lib/dpkg/info/bandit7.password"
+* Used the 'cat' command to read the file's contents and found the password with "cat /var/lib/dpkg/info/bandit7.password".
+* Password - morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 
 Bandit Level 7 -> 8
 -------------------
-Logged into level 8 of Bandit using SSH with the command "ssh bandit7@bandit.labs.overthewire.org" and the password obtained from the previous level.
-Used the 'ls' command to list the file "data.txt".
-By using 'cat' command, we can see that it is a very large file and finding the string "millionth" would be difficult.
-Used 'grep' command to find string "millionth" in data.txt with the command "grep "millionth" data.txt".
-Output - millionth       dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
-Password - dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+* Logged into level 8 of Bandit using SSH with the command "ssh bandit7@bandit.labs.overthewire.org" and the password obtained from the previous level.
+* Used the 'ls' command to list the file "data.txt".
+* By using 'cat' command, we can see that it is a very large file and finding the string "millionth" would be difficult.
+* Used 'grep' command to find string "millionth" in data.txt with the command "grep "millionth" data.txt".
+* Output - millionth       dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+* Password - dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 
 Bandit Level 8 -> 9
 -------------------
-Logged into level 9 of Bandit using SSH with the command "ssh bandit8@bandit.labs.overthewire.org" and the password obtained from the previous level.
-Used the 'ls' command to list the file "data.txt".
-By using 'cat' command, we can see that it is a very large file and finding the unique string would be difficult.
-Using 'sort' command with the 'uniq' command, we can identify the unique string in this huge file.
-Used "sort data.txt | uniq -u" and found the password.
-Password - 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+* Logged into level 9 of Bandit using SSH with the command "ssh bandit8@bandit.labs.overthewire.org" and the password obtained from the previous level.
+* Used the 'ls' command to list the file "data.txt".
+* By using 'cat' command, we can see that it is a very large file and finding the unique string would be difficult.
+* Using 'sort' command with the 'uniq' command, we can identify the unique string in this huge file.
+* Used "sort data.txt | uniq -u" and found the password.
+* Password - 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 
 Bandit Level 9 -> 10
 --------------------
-Logged into level 10 of Bandit using SSH with the command "ssh bandit9@bandit.labs.overthewire.org" and the password obtained from the previous level.
-Used the 'ls' command to list the file "data.txt".
-Used the 'strings' command along with 'grep' command to search for the string with "==".
-Output - bandit9@bandit:~$ strings data.txt | grep ===
+* Logged into level 10 of Bandit using SSH with the command "ssh bandit9@bandit.labs.overthewire.org" and the password obtained from the previous level.
+* Used the 'ls' command to list the file "data.txt".
+* Used the 'strings' command along with 'grep' command to search for the string with "==".
+[Output - bandit9@bandit:~$ strings data.txt | grep ===
 \a!;========== the
 ========== passwordf
 ========== isc
-========== FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+========== FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey]
 
 Password - FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
 
