@@ -2,10 +2,10 @@
 Hi. Following is my bandit writeup:
 Bandit Level 0 -> 1
 -------------------
-Logged in to the Bandit game using SSH with the command "ssh bandit0@bandit.labs.overthewire.org" and the password "bandit0".  
-Used the 'ls' command to list all files in the home directory and found the "readme" file.  
+*item-Logged in to the Bandit game using SSH with the command "ssh bandit0@bandit.labs.overthewire.org" and the password "bandit0".  
+*item-Used the 'ls' command to list all files in the home directory and found the "readme" file.  
 Used the 'cat' command to read the file's contents and found the password with "cat readme".  
-!!Password - ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If!!
+***Password - ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If***
 
 Bandit Level 1 -> 2
 -------------------
